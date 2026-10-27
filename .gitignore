@@ -1,0 +1,18 @@
+# 开发/调试脚本（仅本地用，不进仓库）
+sync-to-dsh.cjs
+test-b64.cjs
+
+# 依赖
+node_modules/
+
+# 诊断输出图（snip.ps1 -Mode diag 生成）
+*.png
+diag-*.png
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时
+*.log
+dist/

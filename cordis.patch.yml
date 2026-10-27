@@ -1,0 +1,12 @@
+# dsh-snip-composer bundle layer — applied automatically because package.json
+# declares dsh.bundle.patch. Later layers (the profile's own cordis.patch.yml)
+# can still override this row by id.
+#
+# Intentionally minimal: unlike dsh-vision-router this plugin does not own a
+# remote Web connection and must not touch the `modules` / `connection` rows
+# (those carry vision-router's private `visionRouterWebConnectionReady` gate).
+# The Node half defers on ctx.inject(['webServer'], ...) instead.
+- insert:
+    - id: snip-composer
+      name: dsh-snip-composer
+      config: {}

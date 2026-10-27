@@ -1,0 +1,43 @@
+{
+  "name": "dsh-snip-composer",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "DSH composer button that captures a screen region and pastes it into the chat input (DSH screenshot question).",
+  "main": "lib/index.js",
+  "author": "凌志 赵 <3607299037@qq.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penguinIA123/dsh-snip-composer.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "screenshot",
+    "plugin"
+  ],
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": []
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.2 <0.3.0-0"
+  }
+}
