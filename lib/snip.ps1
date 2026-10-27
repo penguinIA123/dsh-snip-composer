@@ -1,4 +1,4 @@
-# snip.ps1 —— 截图提问内核（下拉菜单版，无选择窗）
+﻿# snip.ps1 —— 截图提问内核（下拉菜单版，无选择窗）
 # 由 dsh-snip-composer 的 POST /_dsh/snip-composer/capture 调用。
 # 参数 -Mode：
 #   region       框选屏幕区域（默认）
